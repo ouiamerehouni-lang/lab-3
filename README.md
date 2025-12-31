@@ -16,3 +16,17 @@ On a versionné le dataset brut raw.csv en utilisant DVC afin d’éviter d’al
 
 
 **Étape 3 : Configuration d’un remote DVC**
+On a configuré un remote DVC afin de stocker réellement les fichiers volumineux en dehors du dépôt Git. On a d’abord créé un dossier local servant d’espace de stockage pour les données suivies par DVC, puis on l’a déclaré comme remote par défaut.
+
+<img width="944" height="354" alt="image" src="https://github.com/user-attachments/assets/decc6021-c7e2-4faa-802b-f94642a997ec" />
+<img width="964" height="191" alt="image" src="https://github.com/user-attachments/assets/bab9c42c-83b7-458e-b9f6-fddba44afdd7" />
+
+
+**Étape 4 : Push des données dans le remote DVC**
+
+On a simulé la collaboration : on a supprimé le fichier local, puis récupéré exactement le même fichier depuis le remote DVC avec dvc pull. Cela montre que DVC permet de partager et restaurer les données sans surcharger Git.
+<img width="627" height="132" alt="image" src="https://github.com/user-attachments/assets/269feae4-fde6-49d7-8df5-2128bc8b9f16" />
+<img width="437" height="74" alt="image" src="https://github.com/user-attachments/assets/b2194e25-ad29-4e9d-885e-0dbbb139323c" />
+
+
+**Étape 5 : imulation d’une collaboration : supprimer localement et récupérer depuis DVC**
