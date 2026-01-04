@@ -29,4 +29,32 @@ On a simulé la collaboration : on a supprimé le fichier local, puis récupé
 <img width="437" height="74" alt="image" src="https://github.com/user-attachments/assets/b2194e25-ad29-4e9d-885e-0dbbb139323c" />
 
 
+
 **Étape 5 : imulation d’une collaboration : supprimer localement et récupérer depuis DVC**
+
+On a simulé un scénario de collaboration en supprimant le fichier de données local raw.csv tout en conservant son fichier de suivi .dvc. Ensuite, en exécutant la commande dvc pull, on a récupéré automatiquement le fichier depuis le remote DVC et on l’a restauré à l’identique.
+<img width="887" height="328" alt="image" src="https://github.com/user-attachments/assets/bf1248d5-f81d-44e8-b35e-5b333e0ba7c1" />
+<img width="966" height="572" alt="image" src="https://github.com/user-attachments/assets/d126b676-410f-4c9e-ade3-c63e12312bb9" />
+
+
+
+**Étape 6 : Création d’un pipeline reproductible dvc.yaml**
+
+On a versionné les données transformées et les statistiques d’entraînement avec DVC, en les liant à un commit Git précis.
+
+<img width="1059" height="280" alt="image" src="https://github.com/user-attachments/assets/30a61e5a-e028-4a8d-9d92-90f158b2d242" />
+<img width="1244" height="271" alt="image" src="https://github.com/user-attachments/assets/47f93307-c4a7-4edd-b17a-bb9ca32ba05e" />
+<img width="1006" height="103" alt="image" src="https://github.com/user-attachments/assets/9f1bd1d8-0156-4705-a141-e438c93fdab9" />
+
+
+**Étape 7 : Reproduire automatiquement tout le pipeline**
+
+On a structuré tout le workflow de Machine Learning en un pipeline DVC reproductible
+<img width="868" height="375" alt="image" src="https://github.com/user-attachments/assets/60bb33af-7749-4a46-aa62-b3ac0b2d6fb0" />
+<img width="780" height="587" alt="image" src="https://github.com/user-attachments/assets/8c24c048-9029-47c1-bd94-13b228904ab8" />
+<img width="1095" height="133" alt="image" src="https://github.com/user-attachments/assets/d09722d6-d0e0-4d17-9239-78a0c48f3d28" />
+
+la reproductibilité intelligente du pipeline DVC, où dvc repro détecte automatiquement les changements
+
+<img width="1271" height="758" alt="image" src="https://github.com/user-attachments/assets/1840f3a3-f7ab-4511-a490-951768ed1179" />
+
